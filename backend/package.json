@@ -25,8 +25,14 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.0",
     "react-dom": "^16.5.2",
+    "react-redux": "^5.1.0",
+    "redux": "^4.0.1",
     "webpack": "^4.20.2",
     "webpack-bundle-tracker": "^0.4.2-beta",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "redux-thunk": "^2.3.0"
   }
 }

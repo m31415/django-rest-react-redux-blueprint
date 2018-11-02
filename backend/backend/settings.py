@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'frontendapp',
     'webpack_loader',
+    'rest_framework.authtoken',
 ]
 
 WEBPACK_LOADER = {
@@ -49,6 +50,12 @@ WEBPACK_LOADER = {
         'BUNDLE_DIR_NAME': 'frontend/',
         'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
     }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
 }
 
 MIDDLEWARE = [
