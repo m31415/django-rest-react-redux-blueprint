@@ -26,33 +26,25 @@ class Login extends Component {
   render() {
     return (
       <form onSubmit={this.onSubmit}>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-offset-5 col-md-3">
-              <div className="form-login">
-                <h4>Blueprint Login</h4>
-                <div className="input-group mb-3">
-                  <input
-                    type="text"
-                    className="form-control input-sm chat-input"
-                    placeholder="username"
-                    onChange={e => this.setState({ username: e.target.value })}
-                  />
-                  <input
-                    type="password"
-                    className="form-control input-sm chat-input"
-                    placeholder="password"
-                    onChange={e => this.setState({ password: e.target.value })}
-                  />
-                </div>
-                <div className="wrapper">
-                  <button type="submit" className="btn btn-primary btn-md">
-                  Login
-                  </button>
-                </div>
-              </div>
-            </div>
+        <div className="col-md-offset-5 col-md-3">
+          <h4>Blueprint Login</h4>
+          <div className="input-group mb-3">
+            <input
+              type="text"
+              className="form-control input-sm chat-input"
+              placeholder="username"
+              onChange={e => this.setState({ username: e.target.value })}
+            />
+            <input
+              type="password"
+              className="form-control input-sm chat-input"
+              placeholder="password"
+              onChange={e => this.setState({ password: e.target.value })}
+            />
           </div>
+          <button type="submit" className="btn btn-primary btn-md">
+            Login
+          </button>
         </div>
       </form>
     );
