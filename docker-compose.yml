@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  backend:
+    image: 512056294040.dkr.ecr.eu-central-1.amazonaws.com/backend:latest
+
+  nginx:
+    image: 512056294040.dkr.ecr.eu-central-1.amazonaws.com/nginx:latest
+    ports:
+      - "80:8000"
+    volumes_from:
+     - backend
