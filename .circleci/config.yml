@@ -19,7 +19,7 @@ jobs:
           name: run linting
           command: |
             mkdir test-reports
-            flake8 ./ tests --output-file test-reports --max-line-length=120
+            flake8 ./ tests --output-file test-reports/flake8 --max-line-length=120
       - run:
           name: run tests
           command: |
