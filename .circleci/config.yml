@@ -2,7 +2,7 @@ version: 2
 
 jobs:
   build:
-    working_directory: ~/circleci-blueprint
+    working_directory: ~/circleci-blueprint/backend
     docker:
       - image: circleci/python:3.6.4
         environment:
@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - checkout:
-          path: ~/backend
+          path: ~/circleci-blueprint
       - run: sudo chown -R circleci:circleci /usr/local/bin
       - run: sudo chown -R circleci:circleci /usr/local/lib/python3.6/site-packages
       - run:
