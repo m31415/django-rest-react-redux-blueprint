@@ -1,4 +1,5 @@
 # django-rest-react-redux-blueprint
+[![CircleCI](https://circleci.com/gh/m31415/django-rest-react-redux-blueprint.svg?style=svg)](https://circleci.com/gh/m31415/django-rest-react-redux-blueprint)
 
 For detailed explanation of this stack read up my medium guide @ https://medium.com/@maikluchtmeyer
 
