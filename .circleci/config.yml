@@ -16,9 +16,13 @@ jobs:
       - run:
           command: sudo pip install -r requirements.txt
       - run:
-          name: run tests
+          name: run linting
           command: |
             mkdir test-reports
+            flake8 ./ tests --output-file test-reports --max-line-length=120
+      - run:
+          name: run tests
+          command: |
             python manage.py test backendapp/tests/
       - store_test_results:
           path: test-reports
