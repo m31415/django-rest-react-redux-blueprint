@@ -42,6 +42,14 @@ INSTALLED_APPS = [
     'frontendapp',
     'webpack_loader',
     'rest_framework.authtoken',
+    'django_nose',
+]
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+NOSE_ARGS = [
+    '--verbosity=2',  # verbose output
+    '--with-xunit',  # enable XUnit plugin
+    '--xunit-file=test-reports/junit.xml',  # the XUnit report file
 ]
 
 WEBPACK_LOADER = {
