@@ -29,20 +29,19 @@ jobs:
       - store_artifacts:
           path: test-reports
 
-jobs:
- build:
-    working_directory: ~/circleci-blueprint/backend
-    docker:
-      - image: circleci/node:7.10
+  test-frontend:
+      working_directory: ~/circleci-blueprint/backend
+      docker:
+        - image: circleci/node:7.10
 
-    steps:
-      - checkout:
-          path: ~/circleci-blueprint
-      - run:
-          name: run tests
-          command: |
-            npm run test
-      - store_test_results:
-          path: test-reports
-      - store_artifacts:
-          path: test-reports
+      steps:
+        - checkout:
+            path: ~/circleci-blueprint
+        - run:
+            name: run tests
+            command: |
+              npm run test
+        - store_test_results:
+            path: test-reports
+        - store_artifacts:
+            path: test-reports
