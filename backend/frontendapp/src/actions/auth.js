@@ -47,3 +47,11 @@ export function login(username, password) {
       });
   };
 }
+
+
+export function dummyAction(text) {
+  return {
+    type: 'DUMMY_ACTION',
+    text,
+  };
+}
