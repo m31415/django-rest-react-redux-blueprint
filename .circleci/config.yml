@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-  backend:
+  build:
     working_directory: ~/circleci-blueprint/backend
     docker:
       - image: circleci/python:3.6.4
@@ -29,7 +29,7 @@ jobs:
       - store_artifacts:
           path: test-reports
 
-  frontend:
+  build:
     working_directory: ~/circleci-blueprint/backend
     docker:
       - image: circleci/node:7.10
