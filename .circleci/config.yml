@@ -29,7 +29,8 @@ jobs:
       - store_artifacts:
           path: test-reports
 
-  build:
+jobs:
+ build:
     working_directory: ~/circleci-blueprint/backend
     docker:
       - image: circleci/node:7.10
