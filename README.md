@@ -25,5 +25,5 @@ For detailed explanation of this stack read up my medium guide @ https://medium.
 ```python manage.py createsuperuser```
 
 1.5 webpack
-* Install ```node```and ```npm
+* Install ```node```and ```npm```
 * Create FrontEnd Bundle with ```npm run dev```
