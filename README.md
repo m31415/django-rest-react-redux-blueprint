@@ -18,7 +18,7 @@ For detailed explanation of this stack read up my medium guide @ https://medium.
 * Activate virtualenv (PyCharm(preferred) or Terminal)
 * ```pip install -r requirements.txt```
 
-1.4 django-admin
+1.4 django-admin (Optional)
 * Make migrations, migrate and create superuser </br>
 ```python manage.py makemigrations``` </br>
 ```python manage.py migrate``` </br>
@@ -27,3 +27,6 @@ For detailed explanation of this stack read up my medium guide @ https://medium.
 1.5 webpack
 * Install ```node```and ```npm```
 * Create FrontEnd Bundle with ```npm run dev```
+
+1.6 Django
+* Run ```python manage.py runserver```
