@@ -6,10 +6,14 @@ django-nose==1.4.6
 django-webpack-loader==0.6.0
 djangorestframework==3.8.2
 docutils==0.14
+flake8==3.6.0
 gunicorn==19.9.0
 jmespath==0.9.3
+mccabe==0.6.1
 nose==1.3.7
 pyasn1==0.4.4
+pycodestyle==2.4.0
+pyflakes==2.0.0
 python-dateutil==2.7.5
 pytz==2018.5
 PyYAML==3.13
