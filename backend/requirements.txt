@@ -17,7 +17,7 @@ pyflakes==2.0.0
 python-dateutil==2.7.5
 pytz==2018.5
 PyYAML==3.13
-rsa==3.4.2
+rsa==4.7
 s3transfer==0.1.13
 six==1.11.0
 urllib3==1.24.1
